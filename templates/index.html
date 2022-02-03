@@ -4,36 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <title>Flask News Search</title>
-    <link rel="stylesheet" href="{{url_for('NEWSUPDATE',filename="css/style.css")}}">
-    <link rel="stylesheet" href="{{url_for('NEWSUPDATE',filename="css/bootstrap.csss")}}">
-
-    <title>{{OLIVIA NEWS}}</title>
 </head>
 <body>
-    <nav class="test" style="background: #333;">
-        <h1 style="color: #fff;text-align: center;padding: 10px;">OLIVIA NEWS</h1>
-    </nav>
     <div><h1>News updates</h1></div>
     <div class="body">     
         {{articles.totalResults}}
         
         {%for article in articles %}    
-            <h2>{{article.author}}</h2>
+            <li>{{article.author}}</li>
             <h3>{{article.title}}</h3>
-            <h4>{{article.description}}</h4>
+            <li>{{article.description}}</li>
             <a href={{article.url}}> link</a>
-            <h5>{{article.content}}</h5>
+            <li>{{article.content}}</li>
 <br/>
 <br/>
 <br/>
 <br/>
         {%endfor%}
-
-        <div class="footer-copyright text-center py-3">© 2022 Copyright:
-            <a href=" https://github.com/kennedy-ben"> MIT License</a>
-        </div>
     </div>
 </body>
 </html>
