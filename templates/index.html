@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask News Search</title>
+    
+        
 </head>
 <body>
     <div><h1>News updates</h1></div>
@@ -12,7 +14,11 @@
         {{articles.totalResults}}
         
         {%for article in articles %} 
-        <div class="column">  
+        <div class="row">
+            
+            <div class="column" style="background-color:#aaa;">
+                <h2>{{article.author}}</h2>
+            </div>  
             <h2>{{article.author}}</h2>
             <h3>{{article.title}}</h3>
             <h3>{{article.description}}</h3>
@@ -23,9 +29,7 @@
 <br/>
 <br/>
 <br/>
-<div class="column"></div>
-<div class="column"></div>
-<div class="column"></div>
+    
 
 
         {%endfor%}
