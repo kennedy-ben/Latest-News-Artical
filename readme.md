@@ -18,7 +18,7 @@ To view click here: https://kennedy-ben.github.io/Latest-News-Artical/
 ## Tenchonolgies Used
 
 * Python
-* Bootstrap
+* Bootstrapsudo -u postgres createuser --superuser $USER
 * Css
 
 ## Contribution
