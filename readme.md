@@ -13,7 +13,7 @@ Make sure you alredy work on virtual enviroment
 
 ###### Live Demo
 
-To view click here: https://kennedy-ben.github.io/Latest-News-Artical/
+To view click here: https://kennedy-ben.github
 
 ## Tenchonolgies Used
 
